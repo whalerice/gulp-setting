@@ -88,4 +88,5 @@ function rename() {
 
 exports.dev = series(server, watching);
 // exports.build = series(clean, css, scripts,img, file, minify);
+
 exports.build = series(clean, css, scripts,rename,img, file, minify);
